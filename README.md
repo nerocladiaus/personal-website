@@ -8,8 +8,8 @@ selected projects, technical skills, and professional experience.
 ## About
 
 I am a software engineering undergraduate based in Singapore with interests
-across full-stack development, AI-assisted workflows, data systems, and
-embedded technology. This website brings together the projects and experiences
+across full-stack development, database systems, embedded technology, and
+system integration. This website brings together the projects and experiences
 that have shaped how I design and build practical software.
 
 ## Highlights
