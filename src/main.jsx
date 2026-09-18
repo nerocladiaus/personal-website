@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
+const assetPath = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 const profile = {
   name: "Purui Kang",
   initials: "PK",
@@ -171,7 +173,7 @@ function Hero() {
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
           <div className="portrait-frame">
-            <img src="/assets/developer-avatar.png" alt="Illustrated portrait of Purui Kang" />
+            <img src={assetPath("/assets/developer-avatar.png")} alt="Illustrated portrait of Purui Kang" />
           </div>
           <div className="availability"><i /> Open to opportunities</div>
           <div className="hero-badge">Based in<br /><strong>Singapore</strong></div>
@@ -252,7 +254,7 @@ function Projects() {
         {projects.map((project) => (
           <article className="project" data-reveal key={project.title}>
             <div className={`project-visual ${project.tone}`}>
-              <img src={project.image} alt={project.imageAlt} loading="lazy" width="1536" height="1024" />
+              <img src={assetPath(project.image)} alt={project.imageAlt} loading="lazy" width="1536" height="1024" />
               <span className="project-number">{project.number}</span>
               <div className="project-mark" aria-hidden="true">{project.mark}</div>
             </div>
