@@ -1,0 +1,22 @@
+node_modules
+dist
+.env
+.env.local
+npm-debug.log*
+*.log
+
+# Local document-generation and QA artifacts
+tmp/
+resume/
+.resume_it_qa/
+.resume_qa_v1/
+~$*.docx
+
+# Local resume-generation utilities (not part of the website)
+scripts/build_ats_resume.py
+scripts/build_cover_letter.py
+scripts/build_reference_resume.py
+scripts/build_reviewed_resume.py
+scripts/render_word_to_pdf.ps1
+scripts/replace_peerconnect_chorevo.py
+scripts/update_latest_resume.py
