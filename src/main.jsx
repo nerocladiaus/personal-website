@@ -15,21 +15,21 @@ const profile = {
   linkedin: "https://www.linkedin.com/in/purui-kang",
 };
 
-const skills = ["React", "JavaScript", "Python", "Java", "C#", "PostgreSQL", "MongoDB", "Redis", "Docker", "REST APIs", "Embedded C"];
+const skills = ["React", "JavaScript", "Python", "Java", "C#", "Kotlin", "Dart", "Flutter", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Docker", "REST APIs", "Firebase"];
 
 const projects = [
   {
     number: "01",
-    title: "SIT@Punggol PeerConnect",
-    category: "Raspberry Pi · LAN campus platform",
-    description: "A LAN-based campus kiosk platform where students can browse and post help requests, announcements and interest groups.",
-    contribution: "I built the network communication logic and monitoring dashboard, connecting the student-facing kiosk experience with the tools operators need to oversee the platform.",
-    highlights: ["LAN-based communication between campus kiosks", "Dashboard for monitoring community activity", "Filtering and moderation workflows for operators"],
-    stack: ["Raspberry Pi", "LAN", "Dashboard"],
-    image: "/assets/projects/peerconnect.png",
-    imageAlt: "Concept artwork of a Raspberry Pi connected to a campus community kiosk",
+    title: "Chorevo",
+    category: "Android · Dance-learning application",
+    description: "An Android dance-learning application built with Kotlin and Jetpack Compose.",
+    contribution: "I developed user-facing features and integrated Firebase services and MediaPipe functionality, connecting the application interface with its backend and data services.",
+    highlights: ["Android features built with Kotlin and Jetpack Compose", "Firebase-backed application services", "MediaPipe-powered interactive functionality"],
+    stack: ["Kotlin", "Jetpack Compose", "Firebase", "MediaPipe"],
+    image: "/assets/projects/chorevo.png",
+    imageAlt: "Concept artwork of the Chorevo Android dance-learning application",
     tone: "blue",
-    mark: "LAN",
+    mark: "APP",
   },
   {
     number: "02",
@@ -46,25 +46,25 @@ const projects = [
   },
   {
     number: "03",
-    title: "Semi-autonomous Robotic Arm",
-    category: "Embedded systems · Robotics",
-    description: "A web-controlled robotic arm supporting manual operation and autonomous pick-and-place workflows with live sensor feedback.",
-    contribution: "I assembled and programmed the arm, improving coordinated movement through embedded control logic, configuration and integration testing.",
-    highlights: ["Browser-based manual control", "Autonomous pick-and-place workflows", "Live sensor feedback and coordinated movement"],
-    stack: ["Pico W", "Embedded C", "HTTP"],
-    image: "/assets/projects/robotic-arm.png",
-    imageAlt: "Concept artwork of a web-controlled robotic arm moving packages",
+    title: "Secure AI-Assisted Job Platform",
+    category: "AI-assisted applications · Job aggregation",
+    description: "A secure job platform with salary insights, aggregated listings and recommendations tailored to each candidate.",
+    contribution: "I developed salary features and ranked recommendations by matching information from user profiles against active job postings, with database security built into the platform.",
+    highlights: ["Salary insights and comparison features", "Ranked recommendations based on candidate profiles", "Database security for sensitive user data"],
+    stack: ["AI-Assisted Applications", "Job Aggregation", "Data Security"],
+    image: "/assets/projects/secure-ai-jobs.png",
+    imageAlt: "Concept artwork of a secure AI-assisted job platform",
     tone: "violet",
-    mark: "ARM",
+    mark: "AI",
   },
   {
     number: "04",
     title: "Internal Feedback System",
     category: "Backend & database · Sembcorp",
     description: "An internal feedback system now in operational use, supporting web and mobile users across real business workflows.",
-    contribution: "During my internship, I developed and maintained backend and database components and implemented audit logging to record user activity in dedicated tables for security monitoring and traceability.",
-    highlights: ["Backend and database component development", "Database audit logging and activity traceability", "Implementation, testing, debugging and maintenance"],
-    stack: ["Backend", "Databases", "Web & Mobile"],
+    contribution: "During my internship, I developed and maintained backend and database components, improved SQL query security and implemented dedicated audit tables for monitoring and traceability.",
+    highlights: ["Backend and database development for web and mobile users", "Secure SQL queries and database audit logging", "Testing, debugging and application maintenance", "Requirements work with customers and an overseas software team"],
+    stack: ["Backend", "SQL", "Database Security", "Web & Mobile"],
     image: "/assets/projects/feedback-system.png",
     imageAlt: "Concept artwork of a web and mobile company feedback analytics system",
     tone: "green",
@@ -73,8 +73,8 @@ const projects = [
 ];
 
 const timeline = [
-  ["Sep 2024 — Apr 2028", "Singapore Institute of Technology", "BEng (Hons) in ICT, majoring in Software Engineering · expected Apr 2028"],
-  ["Feb — Aug 2023", "Sembcorp Industries Ltd", "IT Technician Intern · backend development, databases, testing and system maintenance"],
+  ["Sep 2024 — Apr 2028", "Singapore Institute of Technology", "BEng (Hons) in Information and Communications Technology, majoring in Software Engineering · expected Apr 2028"],
+  ["Feb — Aug 2023", "Sembcorp Industries Ltd", "IT Technician Intern · backend and database development, SQL security, audit logging and requirements gathering"],
   ["2021 — 2024", "Nanyang Polytechnic", "Diploma in Infocomm & Media Engineering"],
   ["Oct 2020 — Jan 2021", "RWPrince", "Web Management Intern · website design, marketing campaigns, system updates and stock records"],
   ["2019 — 2021", "Institute of Technical Education", "Higher Nitec in IT Application Development"],
@@ -88,8 +88,8 @@ const personalDetails = [
   },
   {
     number: "02",
-    title: "Backend, data and embedded systems",
-    copy: "I enjoy connecting the parts behind a product — web interfaces, backend logic, relational and document databases, caching layers and the embedded hardware a system depends on.",
+    title: "Backend, data and mobile systems",
+    copy: "I enjoy connecting the parts behind a product — web and mobile interfaces, backend logic, relational and document databases, caching layers and the services that make them work together.",
   },
   {
     number: "03",
@@ -181,11 +181,11 @@ function Hero() {
         <div className="hero-word hero-word-right">
           <span>Software engineering</span>
           <h1>engin<span>eer</span></h1>
-          <p>Web, data and embedded<br />systems — end to end.</p>
+          <p>Web, mobile and data<br />systems — end to end.</p>
         </div>
       </div>
       <div className="hero-bottom">
-        <p className="intro"><strong>Hello, I&apos;m Purui.</strong> I&apos;m a software engineering undergraduate in Singapore with hands-on experience in web applications, backend development, database systems, embedded development and system integration.</p>
+        <p className="intro"><strong>Hello, I&apos;m Purui.</strong> I&apos;m a software engineering undergraduate in Singapore with hands-on experience in application development, backend systems, databases, testing, debugging and system integration.</p>
         <a className="circle-link" href="#work" aria-label="Explore selected work"><span>Explore<br />my work</span><b>↓</b></a>
       </div>
     </section>
@@ -211,9 +211,9 @@ function About() {
       <div className="about-layout" data-reveal>
         <div className="about-note"><span>How I think</span><div className="scribble">build → test → learn</div></div>
         <div className="about-copy">
-          <p>I&apos;m currently pursuing a BEng (Hons) in ICT, majoring in Software Engineering at Singapore Institute of Technology, with an expected graduation in 2028.</p>
-          <p>I&apos;m drawn to work where software meets real operations. My projects span web applications, hybrid databases, networked Raspberry Pi systems and embedded robotics — experiences that have taught me to think beyond a single screen or technology.</p>
-          <p>During my internship at Sembcorp, I developed and maintained backend and database components for an operational feedback system. I also implemented database audit logging and supported testing, debugging and issue resolution across the application lifecycle.</p>
+          <p>I&apos;m currently pursuing a BEng (Hons) in Information and Communications Technology, majoring in Software Engineering at Singapore Institute of Technology, with an expected graduation in 2028.</p>
+          <p>I&apos;m drawn to work where software meets real operations. My projects span Android applications, secure backend systems, hybrid databases and AI-assisted job discovery — experiences that have taught me to think beyond a single screen or technology.</p>
+          <p>During my internship at Sembcorp, I developed backend and database components for an operational feedback system, strengthened SQL query security and implemented audit logging. I also worked with customers and an overseas software team to turn requirements into working software.</p>
           <a className="inline-link" href="#experience">See my journey <span>↓</span></a>
         </div>
         <div className="fact-stack">
@@ -238,7 +238,7 @@ function About() {
       </div>
       <div className="now-strip" data-reveal>
         <div><span>Currently</span><strong>Studying at SIT</strong></div>
-        <div><span>Exploring</span><strong>Full-stack, databases & embedded systems</strong></div>
+        <div><span>Exploring</span><strong>Full-stack, mobile & database systems</strong></div>
         <div><span>Looking for</span><strong>Internships & collaborative projects</strong></div>
         <div><span>Communicating in</span><strong>English & Chinese</strong></div>
       </div>

@@ -8,14 +8,14 @@ selected projects, technical skills, and professional experience.
 ## About
 
 I am a software engineering undergraduate based in Singapore with interests
-across full-stack development, database systems, embedded technology, and
+across application development, backend systems, databases, testing, and
 system integration. This website brings together the projects and experiences
 that have shaped how I design and build practical software.
 
 ## Highlights
 
 - Responsive single-page design for desktop and mobile
-- Project case studies covering mobile, AI, web, and embedded systems
+- Project case studies covering mobile, AI-assisted, backend, and data systems
 - Education and professional experience timeline
 - Scroll progress, reveal animations, and interactive visual details
 - Accessible semantic markup and reduced-motion support
